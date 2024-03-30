@@ -1,0 +1,34 @@
+<script>
+AOS.init();
+</script>
+<header class="secondary_header">
+
+  <h1>Nouveau résumé</h1>
+  <%= image_tag("logo.png", class: "logo_header_sec", alt: "Description de l'image") %>
+
+</header>
+
+
+
+
+<%= render "form", resume: @resume %>
+
+<br>
+
+<div>
+  <%= link_to "Back to resumes", resumes_path %>
+</div>
+
+<footer>
+  <div class="footer_nav">
+    <a href="">Retour en Haut</a>
+    <a href="#conferences">Participer</a>
+    <a href="/mentions_legales">Mentions légales</a>
+  </div>
+  <div class="social">
+    <%= image_tag("instagram_icon.webp", alt: "Instagram icon") %>
+    <%= image_tag("mail_icon.webp", alt: "Mail icon") %>
+
+  </div>
+  <%= image_tag("logo.png", class: "logo_footer", alt: "Logo of Le Havre MUN") %>
+</footer>

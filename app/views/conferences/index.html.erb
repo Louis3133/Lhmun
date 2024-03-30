@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Conferences</h1>
+
+<div id="conferences">
+  <% @conferences.each do |conference| %>
+    <%= render conference %>
+  <% end %>
+</div>
+<%= link_to "New conference", new_conference_path %>

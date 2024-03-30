@@ -1,0 +1,42 @@
+<%= form_with(model: resumesec) do |form| %>
+  <% if resumesec.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(resumesec.errors.count, "error") %> prohibited this resumesec from being saved:</h2>
+
+      <ul>
+        <% resumesec.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div>
+    <%= form.label :paragraphe1, style: "display: block" %>
+    <%= form.text_area :paragraphe1 %>
+  </div>
+
+  <div>
+    <%= form.label :paragraphe2, style: "display: block" %>
+    <%= form.text_area :paragraphe2 %>
+  </div>
+
+  <div>
+    <%= form.label :image, style: "display: block" %>
+    <%= form.text_area :image %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

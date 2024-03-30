@@ -1,0 +1,2 @@
+module ResumesecsHelper
+end

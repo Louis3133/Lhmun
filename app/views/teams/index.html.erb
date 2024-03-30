@@ -1,0 +1,45 @@
+<script>
+AOS.init();
+</script>
+<header class="secondary_header">
+
+  <a href="/resumes">Accueil</a>
+  <h1>L'équipe</h1>
+  <%= image_tag("logo.png", class: "logo_header_sec", alt: "Description de l'image") %>
+
+</header>
+
+<p style="color: green"><%= notice %></p>
+
+<h2>Qui sommes nous ?</h2>
+
+<p class="intro_team">
+Notre équipe, dévouée et diversifiée, incarne la force motrice derrière notre
+projet associatif. Composée de professionnels passionnés, chacun apporte une
+expertise unique, de la planification stratégique à l'exécution minutieuse.
+Avec un mélange de compétences complémentaires et une énergie collaborative,
+notre équipe forme le socle solide sur lequel repose la réussite de notre projet associatif.
+
+</p>
+
+
+<div id="teams">
+  <% @teams.each do |team| %>
+    <div class="team">
+      <%= render team %>
+    </div>
+  <% end %>
+</div>
+
+
+
+
+<footer>
+<div class="footer_nav">
+  <a href="">Retour en Haut</a>
+  <a href="/resumes#conferences">Participer</a>
+  <a href="/mentions_legales">Mentions légales</a>
+</div>
+
+<%= image_tag("logo.png", class: "logo_footer", alt: "Description de l'image") %>
+</footer>
