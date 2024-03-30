@@ -4,7 +4,7 @@ AOS.init();
 </script>
 <%= javascript_include_tag 'traduction' %>
 <header>
-<button id="boutonTraduction">English</button>
+
   <div class="top" data-aos="fade-down">
 
     <h1>Le Havre MUN</h1>
@@ -12,13 +12,13 @@ AOS.init();
 
   <div class="logo" data-aos="fade-up">
 
-    <%= image_tag("logo.png", class: "logo_header", alt: "Logo of a MUN") %>
+    <%= image_tag("logo.webp", class: "logo_header", alt: "Logo of a MUN") %>
 
   </div>
   <div class="nav_header" >
     <a href="/teams">L'équipe</a>
     <button class="participate_header" onclick="window.location.href='#conferences';">
-      <a>Participer</a>
+      <a href="#conferences">Participer</a>
     </button>
     <a href="/commits">Commités</a>
 
@@ -57,8 +57,8 @@ AOS.init();
     </div>
 
     <div class="right" data-aos="fade-left">
-      <%= image_tag("introimg.jpg", alt: "Image of a MUN") %>
-      <p>Catène de conteneurs du Havre</p>
+      <%= image_tag("Team.webp", alt: "The MUN TEAM") %>
+      <p>L'équipe Le Havre MUN</p>
     </div>
   </div>
 
@@ -93,7 +93,7 @@ AOS.init();
 
 
     </div>
-    <%= image_tag("test_image_2.webp", class: "image_confs", alt: "Image of a MUN") %>
+    <%= image_tag("introimg.webp", class: "image_confs", alt: "Image of the catène of conteneur in the Havre") %>
 </section>
 
 <section class="participation" id="how_to">
@@ -133,6 +133,44 @@ AOS.init();
 
 </section>
 
+<section class="participation" id="how_to">
+  <h2>Notre partenaire</h2>
+
+  <div class="partner">
+
+
+
+    <div class="round_right" data-aos="fade-left">
+      <p>
+
+      Nous sommes heureux de vous annoncer notre partenariat avec le CROUS pour
+      l'année 2024, ce dernier nous permettra d'organiser au mieux les MUN et
+      de vous permettre de participer dans le meilleur des conforts.
+
+
+
+      </p>
+
+
+    </div>
+
+    <div class="crous" data-aos="fade-right">
+
+    <%= image_tag("crous.webp", alt: "Logo of the CROUS") %>
+
+
+
+  </div>
+
+
+
+  </div>
+
+
+
+
+</section>
+
 <footer>
 <div class="footer_nav">
   <a href="">Retour en Haut</a>
@@ -140,5 +178,5 @@ AOS.init();
   <a href="/mentions_legales">Mentions légales</a>
 </div>
 
-<%= image_tag("logo.png", class: "logo_footer", alt: "Description de l'image") %>
+<%= image_tag("logo.webp", class: "logo_footer", alt: "Description de l'image") %>
 </footer>
