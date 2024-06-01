@@ -574,8 +574,9 @@ footer{
 .right img{
   border-bottom: 10px #C9912F solid;
   border-right: 10px #C9912F solid;
-  width: 100%;
   height: auto;
+  width: auto;
+
 }
 
 @media screen and (max-width: 1000px) {
